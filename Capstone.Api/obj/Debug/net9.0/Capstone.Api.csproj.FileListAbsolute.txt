@@ -37,3 +37,14 @@
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Capstone.Infrastructure.pdb
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Capstone.Domain.pdb
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
