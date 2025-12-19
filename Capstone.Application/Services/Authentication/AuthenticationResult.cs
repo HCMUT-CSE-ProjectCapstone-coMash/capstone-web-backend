@@ -4,5 +4,6 @@ public record AuthenticationResult (
     Guid Id,
     string FullName,
     string Email,
-    string Token
+    string Token,
+    DateTime CreatedAt
 );

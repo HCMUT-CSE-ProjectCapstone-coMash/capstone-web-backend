@@ -4,6 +4,7 @@ public record AuthenticationResponse (
     Guid Id,
     string FullName,
     string Email,
-    string Token
+    string Token,
+    DateTime CreatedAt
 );
     

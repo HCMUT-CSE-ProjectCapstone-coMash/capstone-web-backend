@@ -48,3 +48,9 @@
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Npgsql.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/BCrypt.Net-Next.dll

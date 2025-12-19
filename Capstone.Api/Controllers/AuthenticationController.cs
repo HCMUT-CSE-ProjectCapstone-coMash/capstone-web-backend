@@ -15,32 +15,44 @@ public class AuthenticationController : ControllerBase
     }
 
     [HttpPost("signup")]
-    public IActionResult SignUp(SignUpRequest request)
+    public async Task<IActionResult> SignUp(SignUpRequest request)
     {
-        var authResult = _authenticationService.SignUp(request.FullName, request.Email, request.Password);
+        var result = await _authenticationService.SignUp(request.FullName, request.Email, request.Password);
 
-        var response = new AuthenticationResponse(
+        if (!result.IsSuccess)
+        {
+            return Conflict(new { error = result.Error });
+        }
+
+        var authResult = result.Value!;
+
+        return Ok(new AuthenticationResponse(
             authResult.Id,
             authResult.FullName,
             authResult.Email,
-            authResult.Token
-        );
-
-        return Ok(response);
+            authResult.Token,
+            authResult.CreatedAt
+        ));
     }
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var authResult = _authenticationService.Login(request.Email, request.Password);
+        var result = await _authenticationService.Login(request.Email, request.Password);
 
-        var response = new AuthenticationResponse(
+        if (!result.IsSuccess)
+        {
+            return Conflict(new { error = result.Error });
+        }
+
+        var authResult = result.Value!;
+
+        return Ok(new AuthenticationResponse(
             authResult.Id,
             authResult.FullName,
             authResult.Email,
-            authResult.Token
-        );
-
-        return Ok(response);
+            authResult.Token,
+            authResult.CreatedAt
+        ));
     }
 }
