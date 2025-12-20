@@ -19,3 +19,7 @@ Content-Type: application/json
     "password": "123456"
 }
 ###
+
+GET {{host}}/auth/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiNTljNzExMi04YmM5LTRhODUtYTY0NS03ZjMxZTQ5NjZmZTEiLCJuYW1lIjoiSHV5bmggTmdvYyBOaG9uIiwianRpIjoiODYzOGEzMmItN2VlYi00ZGU2LWI4MTItZmJkZDFjYzVmY2I1IiwiZXhwIjoxNzY2MjA3NTk2LCJpc3MiOiJDYXBzdG9uZSIsImF1ZCI6IkNhcHN0b25lIn0.w0P9dwzdUwtdYcvxWrscYQoeaCrG9eb4YYHC3Uz39rc

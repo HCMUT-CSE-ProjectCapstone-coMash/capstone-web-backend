@@ -54,3 +54,6 @@
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Npgsql.dll
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/BCrypt.Net-Next.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ngocnhon/Desktop/HK251-252/capstone-web-backend/Capstone.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

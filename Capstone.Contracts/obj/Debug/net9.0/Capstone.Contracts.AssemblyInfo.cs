@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Capstone.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcec40f1456a5f71272862b09a6435a910af0f2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52cd89974c54f3afb42d04ce61c7585d8a209d9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Capstone.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Capstone.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

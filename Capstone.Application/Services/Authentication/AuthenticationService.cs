@@ -56,4 +56,16 @@ public class AuthenticationService : IAuthenticationService
 
         return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, token, user.CreatedAt));
     }
+
+    public async Task<Result<AuthenticationResult>> GetUserById(string UserId)
+    {
+        var user = await _userRepository.GetUserById(Guid.Parse(UserId));
+
+        if (user is null)
+        {
+            return Result<AuthenticationResult>.Failure(".");
+        }
+
+        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, "", user.CreatedAt));
+    }
 }
