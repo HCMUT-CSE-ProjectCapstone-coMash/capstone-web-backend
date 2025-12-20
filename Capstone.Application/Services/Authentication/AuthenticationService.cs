@@ -21,7 +21,7 @@ public class AuthenticationService : IAuthenticationService
         _userRepository = userRepository;
     }
 
-    public async Task<Result<AuthenticationResult>> SignUp(string FullName, string Email, string Password)
+    public async Task<Result<AuthenticationResult>> SignUp(string FullName, string Email, string Password, string Role)
     {
         if (await _userRepository.GetUserByEmail(Email) is not null)
         {
@@ -33,14 +33,16 @@ public class AuthenticationService : IAuthenticationService
             FullName = FullName,
             Email = Email,
             Password = _passwordhasher.Hash(Password),
-            CreatedAt = _dateTimeProvider.UtcNow
+            CreatedAt = _dateTimeProvider.UtcNow,
+            Role = Role
         };
 
         await _userRepository.AddUser(user);
 
         var token = _jwtTokenGenerator.GenerateToken(user.Id, FullName);
 
-        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, FullName, Email, token, user.CreatedAt));
+        return Result<AuthenticationResult>.Success(new AuthenticationResult(
+            user.Id, user.FullName, user.Email, token, user.Role, user.CreatedAt));
     }
 
     public async Task<Result<AuthenticationResult>> Login(string Email, string Password)
@@ -54,7 +56,7 @@ public class AuthenticationService : IAuthenticationService
 
         var token = _jwtTokenGenerator.GenerateToken(user.Id, user.FullName);
 
-        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, token, user.CreatedAt));
+        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, token, user.Role, user.CreatedAt));
     }
 
     public async Task<Result<AuthenticationResult>> GetUserById(string UserId)
@@ -66,6 +68,6 @@ public class AuthenticationService : IAuthenticationService
             return Result<AuthenticationResult>.Failure(".");
         }
 
-        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, "", user.CreatedAt));
+        return Result<AuthenticationResult>.Success(new AuthenticationResult(user.Id, user.FullName, user.Email, "", user.Role, user.CreatedAt));
     }
 }

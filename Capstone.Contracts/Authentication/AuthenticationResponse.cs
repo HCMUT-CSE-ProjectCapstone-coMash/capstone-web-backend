@@ -5,6 +5,7 @@ public record AuthenticationResponse (
     string FullName,
     string Email,
     string Token,
+    string Role,
     DateTime CreatedAt
 );
     

@@ -19,7 +19,7 @@ public class AuthenticationController : ControllerBase
     [HttpPost("signup")]
     public async Task<IActionResult> SignUp(SignUpRequest request)
     {
-        var result = await _authenticationService.SignUp(request.FullName, request.Email, request.Password);
+        var result = await _authenticationService.SignUp(request.FullName, request.Email, request.Password, request.Role);
 
         if (!result.IsSuccess)
         {
@@ -33,6 +33,7 @@ public class AuthenticationController : ControllerBase
             authResult.FullName,
             authResult.Email,
             authResult.Token,
+            authResult.Role,
             authResult.CreatedAt
         ));
     }
@@ -54,6 +55,7 @@ public class AuthenticationController : ControllerBase
             authResult.FullName,
             authResult.Email,
             authResult.Token,
+            authResult.Role,
             authResult.CreatedAt
         ));
     }
@@ -75,6 +77,7 @@ public class AuthenticationController : ControllerBase
             authResult.FullName,
             authResult.Email,
             authResult.Token,
+            authResult.Role,
             authResult.CreatedAt
         ));
     }
