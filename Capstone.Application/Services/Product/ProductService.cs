@@ -12,7 +12,7 @@ public class ProductService : IProductService
         _productRepository = productRepository;
     }
 
-    public async Task<Result<ProductResult[]>> GetProduct()
+    public async Task<Result<ProductResult[]>> GetProducts()
     {
         var products = await _productRepository.GetProducts();
 

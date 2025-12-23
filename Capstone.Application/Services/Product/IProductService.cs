@@ -4,5 +4,5 @@ namespace Capstone.Application.Services.Product;
 
 public interface IProductService
 {
-    Task<Result<ProductResult[]>> GetProduct();
+    Task<Result<ProductResult[]>> GetProducts();
 } 

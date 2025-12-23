@@ -15,9 +15,9 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet("get")]
-    public async Task<IActionResult> GetProduct()
+    public async Task<IActionResult> GetProducts()
     {
-        var response = await _productService.GetProduct();
+        var response = await _productService.GetProducts();
 
         return Ok(response);
     }
