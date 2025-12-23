@@ -3,6 +3,7 @@ using Capstone.Application.Common.Interfaces.Authentication;
 using Capstone.Application.Common.Interfaces.Persistence;
 using Capstone.Application.Common.Interfaces.Services;
 using Capstone.Infrastructure.Authentication;
+using Capstone.Infrastructure.Persistence;
 using Capstone.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +23,7 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IProductRepository, ProductRepository>();
 
         var JwtSettings = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName, JwtSettings);

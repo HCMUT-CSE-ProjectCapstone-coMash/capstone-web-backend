@@ -2,6 +2,8 @@ using Capstone.Application.Common.Interfaces.Persistence;
 using Capstone.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
+namespace Capstone.Infrastructure.Persistence;
+
 public class UserRepository : IUserRepository
 {
     private readonly AppDbContext _context;

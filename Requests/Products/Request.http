@@ -1,0 +1,7 @@
+@host = http://localhost:5054
+
+GET {{host}}/product/get
+Content-Type: application/json
+
+###
+
